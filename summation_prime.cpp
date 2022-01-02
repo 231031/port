@@ -14,13 +14,14 @@ int main()
             if (i % j == 0)
                 k++;
         }
-        if (i>2000000) break;
+        if (i==2000000) break;
         if (k == 2)
         {  
-            // printf("%d\n",i); 
+            printf("%d\n",i); 
             sum = sum + i;
         }
         k = 0;
+        j = 1;
     }
 
     printf("%d", sum + 2);
