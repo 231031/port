@@ -1,17 +1,21 @@
+//form Project Euler problem 7
+//By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+//What is the 10 001st prime number?
+//Ans 104743
 #include <iostream>
 using namespace std;
 int main()
 {
-    int i=0,j=1,k,num=0;
-    while (num<10001)
+    int num=0,j=1,factor,sequence_prime=0;
+    while (sequence_prime<10001)
     {
-         i++;
-        k=0;
-        for (j = 1;j<=i;j++)
+        num++;
+        factor=0;
+        for (j = 1;j<=num;j++)
         {
-            if(i%j==0) k++;  
+            if(num%j==0) factor++;  
         } 
-        if(k==2) num++;
+        if(factor==2) sequence_prime++;
     }
-    printf("%d",i);
+    printf("%d",num);
 }

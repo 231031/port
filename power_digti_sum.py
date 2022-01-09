@@ -1,6 +1,9 @@
-i= int(1)
-m=int(0)
+# form Project Euler problem 16
+# 2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
+# What is the sum of the digits of the number 2^1000?
+# Ans 1366
+i= int(0)
+sum=int(0)
 for i in str (2**1000):
-    m =+ int(i)
-
-print (m)
+    sum += int(i)
+print (sum)
