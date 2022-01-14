@@ -64,7 +64,7 @@ convert_button.grid(row=3, column=1, pady=7)
 reset_button = tk.Button(master=window, text='reset', command=reset, width=13, height=1)
 reset_button.grid(row=3, column=2, pady=7)
 
-result_label = tk.Label(master=window, text="consequence :", fg="midnight blue", background="wheat",
+result_label = tk.Label(master=window, text="Outcome :", fg="midnight blue", background="wheat",
                         font=('IrisUPC', 20))
 result_label.grid(row=4, column=1, pady=7)
 
